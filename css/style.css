@@ -3,393 +3,393 @@
 01557F : secondary color
 #2E3A45 - Dark color (Black)
 #F9FAFF - Light color (White)
+#e9ecec - flex container color
 /*-----------------*/
 /*BASIC SETUP
 /*-----------------*/
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html{
-    background-color: #fff;
-    color: #555;
-    font-family: 'Lato','Arial','san-serif';
-    font-size: 20px;
-    font-weight: 300;
-    text-rendering: optimizeLegibility;
-  }
-  
-  
-  .clearfix {zoom:1}
-  .clearfix:after{
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
-  }
-  
-  /*---------------------*/
-  /*REUSEABLE COMPONENTS
-  /*--------------------*/
-  
-  .row{
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  section{
-    padding: 80px 0;
-  }
-  
-  .box{
-    padding: 1%;
-  }
-  
-  /*---HEADINGS------*/
-  
-  
-  h1,
-  h2,
-  h3,
-  h4{
-    font-weight: 300;
-    text-transform: uppercase;
-    
-    
-  } 
-  
-  h1{
-    margin: 0;
-    margin-bottom: 20px;
-    color: #00314A;
-    font-size: 240%;
-    word-spacing: 4px;
-    letter-spacing: 1px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato','Arial','san-serif';
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+
+.clearfix {zoom:1}
+.clearfix:after{
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*---------------------*/
+/*REUSEABLE COMPONENTS
+/*--------------------*/
+
+.row{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section{
+  padding: 80px 0;
+}
+
+.box{
+  padding: 1%;
+}
+
+/*---HEADINGS------*/
+
+
+h1,
+h2,
+h3,
+h4{
+  font-weight: 300;
+  text-transform: uppercase;
   
   
-  h2{
-    font-size: 180%;
-    word-spacing: 2px;
-    text-align: center;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-  }
+} 
+
+h1{
+  margin: 0;
+  margin-bottom: 20px;
+  color: #00314A;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+
+h2{
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h3{
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h4{
+  font-size: 90%;
+  margin: 20px 0px;
+  letter-spacing: 1px;
+  text-transform: initial;
+  color: #2E3A45;
+}
+
+h2:after{
+  display: block;
+  height: 2px;
+  background-color: #00314A;
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+
+/*---PARAGRAPHS------*/
+
+.long-copy{
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.box p{
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/*---Link------*/
+
+a:link,
+a:visited{
+  color: #00314A;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #00314A;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active{
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
+/*---BUTTONS------*/
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  /*border-radius: 200px;*/
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
   
-  h3{
-    font-size: 110%;
-    margin-bottom: 15px;
-  }
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+  background-color: #00314A;
+  border: 1px solid #00314A;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+  border: 1px solid #00314A;
+  color: #00314A;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+  background-color: #01557F;
+}
+
+.btn-full:hover,
+.btn-full:active{
+  border: 1px solid #01557F;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+  border: 1px solid #01557F;
+  color: #fff;
+}
+
+/*---------------------*/
+/*HEADER
+/*--------------------*/
+
+header{
+  /*background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/weddingAppMockup.png);
+  background-image: url(../images/backimg.jpg);*/
+  background-color: #F9FAFF;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: center;
+  height: 80vh;
+}
+
+.hero-text-box{
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo{
+  height: 70px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+.logo-black{
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+}
+
+/*--Main Nav--*/
+.main-nav{
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+}
+
+.main-nav li{
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
   
-  h4{
-    font-size: 90%;
-    margin: 20px 0px;
-    letter-spacing: 1px;
-    text-transform: initial;
-    color: #2E3A45;
-  }
-  
-  h2:after{
-    display: block;
-    height: 2px;
-    background-color: #00314A;
-    content: "";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-  }
-  
-  
-  /*---PARAGRAPHS------*/
-  
-  .long-copy{
-    line-height: 145%;
-    width: 70%;
-    margin-left: 15%;
-  }
-  
-  .box p{
-    font-size: 90%;
-    line-height: 145%;
-  }
-  
-  /*---Link------*/
-  
-  a:link,
-  a:visited{
-    color: #00314A;
-    text-decoration: none;
-    padding-bottom: 1px;
-    border-bottom: 1px solid #00314A;
-    transition: border-bottom 0.2s, color 0.2s;
-  }
-  
-  a:hover,
-  a:active{
-    color: #555;
-    border-bottom: 1px solid transparent;
-  }
-  
-  /*---BUTTONS------*/
-  
-  .btn:link,
-  .btn:visited,
-  input[type=submit]{
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 30px;
-    font-weight: 300;
-    text-decoration: none;
-    /*border-radius: 200px;*/
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-    
-  }
-  
-  .btn-full:link,
-  .btn-full:visited,
-  input[type=submit]{
-    background-color: #00314A;
-    border: 1px solid #00314A;
-    color: #fff;
-    margin-right: 15px;
-  }
-  
-  .btn-ghost:link,
-  .btn-ghost:visited{
-    border: 1px solid #00314A;
-    color: #00314A;
-  }
-  
-  .btn:hover,
-  .btn:active,
-  input[type=submit]:hover,
-  input[type=submit]:active{
-    background-color: #01557F;
-  }
-  
-  .btn-full:hover,
-  .btn-full:active{
-    border: 1px solid #01557F;
-  }
-  
-  .btn-ghost:hover,
-  .btn-ghost:active{
-    border: 1px solid #01557F;
-    color: #fff;
-  }
-  
-  /*---------------------*/
-  /*HEADER
-  /*--------------------*/
-  
-  header{
-    /*background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/weddingAppMockup.png);
-    background-image: url(../images/backimg.jpg);*/
-    background-color: #F9FAFF;
-    background-size: cover;
-    background-attachment:fixed;
-    background-position: center;
-    height: 80vh;
-  }
-  
-  .hero-text-box{
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .logo{
-    height: 70px;
-    width: auto;
-    float: left;
-    margin-top: 20px;
-  }
-  
-  .logo-black{
-    display: none;
-    height: 50px;
-    width: auto;
-    float: left;
-  }
-  
-  /*--Main Nav--*/
-  .main-nav{
-    float: right;
-    list-style: none;
-    margin-top: 55px;
-  }
-  
-  .main-nav li{
-    display: inline-block;
-    margin-left: 40px;
-  }
-  
-  .main-nav li a:link,
-  .main-nav li a:visited{
-    
-   padding: 8px 0;
-    color: #00314A;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s;
-  }
-  
-  .main-nav li a:hover,
-  .main-nav li a:active{
-    border-bottom: 2px solid #01557F;
-  }
-  
-   /*---------------------*/
-  /*Main Sections
-  /*--------------------*/
-  
-   /*------My UX Skills Section--------*/
-  
-  
-   .skillsContainer{
-     display: flex;
-   }
-  
-   .skillsContainer div{
-     width: 33%;
-     background-color: #e9ecec;
-     padding: 50px;
-     margin: 30px;
-   }
-  
-   .skillsContainer img{
-     align-items: center;
-     width: 100%;
-   }
-  
-   /*------My Work Section--------*/
-  
-  .workGrid {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 10px;
-    background-color: #b7c9cf;
-    padding: 40px;
-    margin: 50px 10px;
-  }
-  
-  .workGrid > div {
-    /*background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid black;*/
+ padding: 8px 0;
+  color: #00314A;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+  border-bottom: 2px solid #01557F;
+}
+
+ /*---------------------*/
+/*Main Sections
+/*--------------------*/
+
+ /*------My UX Skills Section--------*/
+
+
+ .skillsContainer{
+   display: flex;
+ }
+
+ .skillsContainer div{
+   width: 33%;
+   background-color: #b7c9cf;
+   padding: 20px;
+   margin: 20px;
+   text-align: center;
+ }
+
+ .skillsContainer img{
+   align-items: center;
+   width: 100%;
+   height: auto;
+   margin-bottom: 10px;
+ }
+ .skillsContainer p{
     text-align: left;
-  }
-  .workDetails{
-    margin-top: 50px;
-  }
-  
-  .moreproject{
-    text-align: center;
-    background-color: #b7c9cf;
-    padding: 30px;
-    margin: 10px 10px;
-  }
-  
-  /*-----------About Me---------------*/
-  p{
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 90%;
+    font-size: 80%;
     margin: 10px 0px;
     letter-spacing: 1px;
     text-transform: initial;
     color: #2E3A45;
-  }
+ }
+
+ /*------My Work Section--------*/
+
+.workGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-color: #b7c9cf;
+  padding: 40px;
+  margin: 50px 10px;
+}
+
+.workGrid > div {
+  /*background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;*/
+  text-align: left;
+}
+.workDetails{
+  margin-top: 50px;
+}
+
+.moreproject{
+  text-align: center;
+  background-color: #b7c9cf;
+  padding: 30px;
+  margin: 10px 10px;
+}
+
+ /*---------------------*/
+/*FOOTER
+/*--------------------*/
+
+footer{
+  background-color: #00314A;
+  padding: 50px;
+  font-size: 80%;
+}
+
+.footer-nav{
+  list-style: none;
+  float: left;
+}
+.social-links{
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li{
+  display: inline-block;
+  margin-right: 20px;
+ 
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+  margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+  text-decoration: none;
+  border: 0;
+  color:#F9FAFF;
+  transition: color 0.2s;
   
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+  color: #ddd;
   
-   /*---------------------*/
-  /*FOOTER
-  /*--------------------*/
-  
-  footer{
-    background-color: #00314A;
-    padding: 50px;
-    font-size: 80%;
-  }
-  
-  .footer-nav{
-    list-style: none;
-    float: left;
-  }
-  .social-links{
-    list-style: none;
-    float: right;
-  }
-  
-  .footer-nav li,
-  .social-links li{
-    display: inline-block;
-    margin-right: 20px;
-   
-  }
-  
-  .footer-nav li:last-child,
-  .social-links li:last-child{
-    margin: 0;
-  }
-  
-  .footer-nav li a:link,
-  .footer-nav li a:visited,
-  .social-links li a:link,
-  .social-links li a:visited{
-    text-decoration: none;
-    border: 0;
-    color:#F9FAFF;
-    transition: color 0.2s;
-    
-  }
-  
-  .footer-nav li a:hover,
-  .footer-nav li a:active{
-    color: #ddd;
-    
-  }
-  
-  .social-links li a:link,
-  .social-links li a:visited{
-    font-size: 160%;
-  }
-  
-  .fa-github,
-  .fa-google,
-  .fa-linkedin,
-  .fa-codepen,
-  .fa-envelope{
-    transition: color 0.2s;
-  }
-  
-  .fa-github:hover{
-    color: #d0d3da;
-  }
-  
-  .fa-linkedin:hover{
-    color: #d0d3da;
-  }
-  .fa-codepen:hover{
-    color: #d0d3da;
-  }
-  .fa-envelope:hover{
-    color:#d0d3da;
-  }
-  
-  footer p{
-    color:#F9FAFF;
-    text-align: center;
-    margin-top: 60px;
-  }
-  footer h2{
-    color:#F9FAFF;
-    text-align: center;
-  }
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+  font-size: 160%;
+}
+
+.fa-github,
+.fa-google,
+.fa-linkedin,
+.fa-codepen,
+.fa-envelope{
+  transition: color 0.2s;
+}
+
+.fa-github:hover{
+  color: #d0d3da;
+}
+
+.fa-linkedin:hover{
+  color: #d0d3da;
+}
+.fa-codepen:hover{
+  color: #d0d3da;
+}
+.fa-envelope:hover{
+  color:#d0d3da;
+}
+
+footer p{
+  color:#F9FAFF;
+  text-align: center;
+  margin-top: 60px;
+}
+footer h2{
+  color:#F9FAFF;
+  text-align: center;
+}
