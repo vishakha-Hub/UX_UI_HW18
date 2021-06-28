@@ -189,8 +189,9 @@ input[type=submit]:active{
 
 header{
   /*background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/weddingAppMockup.png);
-  background-image: url(../images/backimg.jpg);*/
-  background-color: #F9FAFF;
+  background-image: url(../images/backimg.jpg);
+  background-color: #F9FAFF;*/
+  background-image: linear-gradient(rgba(199, 237, 247, 0.623),rgba(255, 255, 255, 0.7));
   background-size: cover;
   background-attachment:fixed;
   background-position: center;
@@ -261,10 +262,12 @@ header{
 
  .skillsContainer div{
    width: 33%;
-   background-color: #b7c9cf;
+   /*background-color: #b7c9cf;*/
+   background-color: #dde9ed;
    padding: 20px;
    margin: 20px;
    text-align: center;
+   box-shadow: 0 5px 5px 2px #ebecec;
  }
 
  .skillsContainer img{
@@ -297,7 +300,7 @@ header{
   }
 
   .skillsContainer p{
-    font-size: 40%;
+    font-size: 45%;
     margin: 5px 0px;
  }
 }
@@ -308,9 +311,12 @@ header{
   display: grid;
   grid-template-areas: 'myArea myArea';
   grid-gap: 10px;
-  background-color: #b7c9cf;
+  background-color: #F9FAFF;
   padding: 40px;
   margin: 50px 10px;
+  /*box-shadow: 0 30px 80px 10px rgba(0,0,0,.2);*/
+  box-shadow: 0 5px 5px 2px #ebecec;
+
 }
 .workGrid > div {
   /*background-color: rgba(255, 255, 255, 0.8);
