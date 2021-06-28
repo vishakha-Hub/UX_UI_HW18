@@ -282,21 +282,44 @@ header{
     color: #2E3A45;
  }
 
+ @media only screen and (max-width: 900px) {
+  /* For Mobile And Tablet Device: */
+
+  .skillsContainer p{
+    font-size: 40%;
+    margin: 5px 0px;
+ }
+}
+@media only screen and (max-width: 600px) {
+  /* For Mobile And Tablet Device: */
+  .skillsContainer div{
+    width: 100%;
+  }
+
+  .skillsContainer p{
+    font-size: 40%;
+    margin: 5px 0px;
+ }
+}
+
  /*------My Work Section--------*/
 
 .workGrid {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-areas: 'myArea myArea';
   grid-gap: 10px;
   background-color: #b7c9cf;
   padding: 40px;
   margin: 50px 10px;
 }
-
 .workGrid > div {
   /*background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid black;*/
   text-align: left;
+}
+figure img{
+  width: 550px;
+  height: 300px;
 }
 .workDetails{
   margin-top: 50px;
@@ -307,6 +330,28 @@ header{
   background-color: #b7c9cf;
   padding: 30px;
   margin: 10px 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  /* For Mobile And Tablet Device: */
+  .workGrid {
+    display: grid;
+    grid-template-areas: 'myArea';
+    grid-gap: 10px;
+    background-color: #b7c9cf;
+    padding: 40px;
+    margin: 50px 10px;
+  }
+  .workGrid > div {
+    /*background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;*/
+    text-align: left;
+  }
+
+  figure img{
+    width: 100%;
+    height: auto;
+  }
 }
 
  /*---------------------*/
