@@ -213,12 +213,6 @@ header{
   margin-top: 20px;
 }
 
-.logo-black{
-  display: none;
-  height: 50px;
-  width: auto;
-  float: left;
-}
 
 /*--Main Nav--*/
 .main-nav{
@@ -249,7 +243,7 @@ header{
   border-bottom: 2px solid #01557F;
 }
 
-/* Mobile Navigation*/
+/* Mobile Navigation
 
 .mobile-nav-icon{
   float: right;
@@ -262,7 +256,7 @@ header{
   font-size: 200%;
   color: rgb(0, 0, 0);
 }
-
+*/
 
  /*---------------------*/
 /*Main Sections
@@ -276,7 +270,7 @@ header{
  }
 
  .skillsContainer div{
-   width: 33%;
+   
    /*background-color: #b7c9cf;*/
    background-color: #dde9ed;
    padding: 20px;
